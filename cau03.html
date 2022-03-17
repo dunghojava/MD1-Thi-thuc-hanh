@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+
+</body>
+<script>
+    function DemKyTuNguyenAm() {
+        let str = 'ho anh dung lop C0222I1';
+        arr = str.split('');
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === 'a' || arr[i] === 'o' || arr[i] === 'e' || arr[i] === 'u' || arr[i] === 'i') {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return false
+        }
+        return count;
+    }
+
+    console.log(DemKyTuNguyenAm())
+</script>
+</html>
